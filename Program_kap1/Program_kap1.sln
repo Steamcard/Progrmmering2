@@ -5,6 +5,8 @@ VisualStudioVersion = 16.0.29209.62
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Program_kap1.4", "Program_kap1\Program_kap1.4.csproj", "{CC1C09BC-5D41-42F3-A0B2-0BA1D5AAA0C6}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ovning1_3", "ovning1_3\ovning1_3.csproj", "{F439AE27-13D8-4498-A9DD-28980A354AC2}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{CC1C09BC-5D41-42F3-A0B2-0BA1D5AAA0C6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CC1C09BC-5D41-42F3-A0B2-0BA1D5AAA0C6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CC1C09BC-5D41-42F3-A0B2-0BA1D5AAA0C6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F439AE27-13D8-4498-A9DD-28980A354AC2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F439AE27-13D8-4498-A9DD-28980A354AC2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F439AE27-13D8-4498-A9DD-28980A354AC2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F439AE27-13D8-4498-A9DD-28980A354AC2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
