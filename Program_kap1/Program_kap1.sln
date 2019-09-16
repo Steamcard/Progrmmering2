@@ -7,6 +7,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Program_kap1.4", "Program_k
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ovning1_3", "ovning1_3\ovning1_3.csproj", "{F439AE27-13D8-4498-A9DD-28980A354AC2}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Classer", "Classer\Classer.csproj", "{508BDE9D-580F-4A7A-956F-D5F8832B94D5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Resebokning", "Resebokning\Resebokning.csproj", "{2B44FE9B-59BE-44B7-B3C5-729405211A12}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +25,14 @@ Global
 		{F439AE27-13D8-4498-A9DD-28980A354AC2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F439AE27-13D8-4498-A9DD-28980A354AC2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F439AE27-13D8-4498-A9DD-28980A354AC2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{508BDE9D-580F-4A7A-956F-D5F8832B94D5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{508BDE9D-580F-4A7A-956F-D5F8832B94D5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{508BDE9D-580F-4A7A-956F-D5F8832B94D5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{508BDE9D-580F-4A7A-956F-D5F8832B94D5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2B44FE9B-59BE-44B7-B3C5-729405211A12}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2B44FE9B-59BE-44B7-B3C5-729405211A12}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2B44FE9B-59BE-44B7-B3C5-729405211A12}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2B44FE9B-59BE-44B7-B3C5-729405211A12}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
