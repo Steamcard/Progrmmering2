@@ -19,8 +19,8 @@ namespace Classer
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            Class1 bil1 = new Class1();
-            bil1.brand = "volov";
-        }
+            Student s1 = new Student("Stefan");
+            Student s2 = new Student("Jenny");
+            MessageBox.Show(s1.Namn);
     }
 }
