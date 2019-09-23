@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Classer", "Classer\Classer.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Resebokning", "Resebokning\Resebokning.csproj", "{2B44FE9B-59BE-44B7-B3C5-729405211A12}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Skyttetavling", "Skyttetavling\Skyttetavling.csproj", "{78F316F1-C69D-4DC6-B282-E34DEB50F527}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{2B44FE9B-59BE-44B7-B3C5-729405211A12}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2B44FE9B-59BE-44B7-B3C5-729405211A12}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2B44FE9B-59BE-44B7-B3C5-729405211A12}.Release|Any CPU.Build.0 = Release|Any CPU
+		{78F316F1-C69D-4DC6-B282-E34DEB50F527}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{78F316F1-C69D-4DC6-B282-E34DEB50F527}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{78F316F1-C69D-4DC6-B282-E34DEB50F527}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{78F316F1-C69D-4DC6-B282-E34DEB50F527}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
