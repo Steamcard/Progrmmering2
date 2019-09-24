@@ -41,6 +41,7 @@ namespace Skyttetavling
         {
             return "Namn: " + this._namn + " Poäng: " + this._poäng;
         }
+
     }
 
 }

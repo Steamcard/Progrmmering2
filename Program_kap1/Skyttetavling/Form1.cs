@@ -38,11 +38,15 @@ namespace Skyttetavling
 
         private void BtnVisa_Click(object sender, EventArgs e)
         {
+            int sokPoäng = int.Parse(tbxSok.Text);
             lbxReg.Items.Clear();
 
-            foreach(SkytteLista s in listor)
-            { 
-                if (s.Poäng == tbxPoäng)
+            foreach (SkytteLista s in listor)
+            {
+                if (sokPoäng == s.Poäng)
+                {
+                    lbxReg.Items.Add(s);
+                }
             }
 
         }

@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Resebokning", "Resebokning\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Skyttetavling", "Skyttetavling\Skyttetavling.csproj", "{78F316F1-C69D-4DC6-B282-E34DEB50F527}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "loplogg", "loplogg\loplogg.csproj", "{1A7B615A-9DD6-42FD-90F3-6590C72EAD10}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{78F316F1-C69D-4DC6-B282-E34DEB50F527}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{78F316F1-C69D-4DC6-B282-E34DEB50F527}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{78F316F1-C69D-4DC6-B282-E34DEB50F527}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1A7B615A-9DD6-42FD-90F3-6590C72EAD10}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1A7B615A-9DD6-42FD-90F3-6590C72EAD10}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1A7B615A-9DD6-42FD-90F3-6590C72EAD10}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1A7B615A-9DD6-42FD-90F3-6590C72EAD10}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
