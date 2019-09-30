@@ -56,7 +56,7 @@ namespace loplogg
             {
                 if (sokSträcka == sok.Sträcka)
                 {
-                    lbxReg.Items.Add(sok.Hastighet);
+                    lbxReg.Items.Add(sok.Hastighet + " km/h");
                 }
             }
 
