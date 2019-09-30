@@ -17,6 +17,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "loplogg", "loplogg\loplogg.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Styrketraning", "Styrketraning\Styrketraning.csproj", "{F110A5FB-40A5-498D-8166-045032A0ADEE}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tidrapportering", "Tidrapportering\Tidrapportering.csproj", "{7CAFF11D-5BAB-436E-A1EB-1EC8019064FE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -51,6 +53,10 @@ Global
 		{F110A5FB-40A5-498D-8166-045032A0ADEE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F110A5FB-40A5-498D-8166-045032A0ADEE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F110A5FB-40A5-498D-8166-045032A0ADEE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7CAFF11D-5BAB-436E-A1EB-1EC8019064FE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7CAFF11D-5BAB-436E-A1EB-1EC8019064FE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7CAFF11D-5BAB-436E-A1EB-1EC8019064FE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7CAFF11D-5BAB-436E-A1EB-1EC8019064FE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

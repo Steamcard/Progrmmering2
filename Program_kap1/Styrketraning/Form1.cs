@@ -24,8 +24,9 @@ namespace Styrketraning
             int _rep = int.Parse(tbxRep.Text);
             int _set = int.Parse(tbxSet.Text);
             int _vikt = int.Parse(tbxVikt.Text);
+            int _total = _rep * _set * _vikt;
 
-            Ovningar lista1 = new Ovningar(_ovning, _rep, _set, _vikt);
+            Ovningar lista1 = new Ovningar(_ovning, _rep, _set, _vikt, _total);
             listor.Add(lista1);
         }
 
@@ -35,7 +36,10 @@ namespace Styrketraning
 
             foreach(Ovningar s in listor)
             {
-
+                if(ovningSok == s.Ovning)
+                {
+                    lbxSok.Items.Add(s.Total);
+                }
             }
         }
     }

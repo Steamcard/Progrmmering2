@@ -13,14 +13,17 @@ namespace Styrketraning
         int _rep;
         int _set;
         int _vikt;
+        int _total;
 
 
-        public Ovningar(string ovning, int rep, int set, int vikt)
+        public Ovningar(string ovning, int rep, int set, int vikt, int total)
         {
             this._ovning = ovning;
             this._rep = rep;
             this._set = set;
             this._vikt = vikt;
+            this._total = total;
+            
 
             MessageBox.Show("Övning sparad");
         }
@@ -55,6 +58,14 @@ namespace Styrketraning
             get
             {
                 return this._vikt;
+            }
+        }
+
+        public int Total
+        {
+            get
+            {
+                return this._total;
             }
         }
 
