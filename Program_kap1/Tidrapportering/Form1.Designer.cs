@@ -29,24 +29,24 @@
         private void InitializeComponent()
         {
             this.gbxReg = new System.Windows.Forms.GroupBox();
-            this.gbxAndra = new System.Windows.Forms.GroupBox();
-            this.gbxBerakna = new System.Windows.Forms.GroupBox();
-            this.listBox1 = new System.Windows.Forms.ListBox();
-            this.label1 = new System.Windows.Forms.Label();
+            this.btnReg = new System.Windows.Forms.Button();
+            this.tbxTid = new System.Windows.Forms.TextBox();
+            this.tbxKund = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.gbxAndra = new System.Windows.Forms.GroupBox();
+            this.btnAndra = new System.Windows.Forms.Button();
+            this.tbxNyttNamn = new System.Windows.Forms.TextBox();
+            this.tbxGamNamn = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.gbxBerakna = new System.Windows.Forms.GroupBox();
+            this.btnBer = new System.Windows.Forms.Button();
+            this.tbxPris = new System.Windows.Forms.TextBox();
+            this.tbxTim = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
+            this.label5 = new System.Windows.Forms.Label();
+            this.lbxReg = new System.Windows.Forms.ListBox();
             this.gbxReg.SuspendLayout();
             this.gbxAndra.SuspendLayout();
             this.gbxBerakna.SuspendLayout();
@@ -54,9 +54,9 @@
             // 
             // gbxReg
             // 
-            this.gbxReg.Controls.Add(this.button3);
-            this.gbxReg.Controls.Add(this.textBox4);
-            this.gbxReg.Controls.Add(this.textBox3);
+            this.gbxReg.Controls.Add(this.btnReg);
+            this.gbxReg.Controls.Add(this.tbxTid);
+            this.gbxReg.Controls.Add(this.tbxKund);
             this.gbxReg.Controls.Add(this.label2);
             this.gbxReg.Controls.Add(this.label1);
             this.gbxReg.Location = new System.Drawing.Point(23, 13);
@@ -66,50 +66,29 @@
             this.gbxReg.TabStop = false;
             this.gbxReg.Text = "Ny tidrapport";
             // 
-            // gbxAndra
+            // btnReg
             // 
-            this.gbxAndra.Controls.Add(this.button2);
-            this.gbxAndra.Controls.Add(this.textBox2);
-            this.gbxAndra.Controls.Add(this.textBox1);
-            this.gbxAndra.Controls.Add(this.label4);
-            this.gbxAndra.Controls.Add(this.label3);
-            this.gbxAndra.Location = new System.Drawing.Point(23, 137);
-            this.gbxAndra.Name = "gbxAndra";
-            this.gbxAndra.Size = new System.Drawing.Size(349, 107);
-            this.gbxAndra.TabIndex = 1;
-            this.gbxAndra.TabStop = false;
-            this.gbxAndra.Text = "Ändra kundnamn";
+            this.btnReg.Location = new System.Drawing.Point(245, 67);
+            this.btnReg.Name = "btnReg";
+            this.btnReg.Size = new System.Drawing.Size(75, 23);
+            this.btnReg.TabIndex = 4;
+            this.btnReg.Text = "Lägg till";
+            this.btnReg.UseVisualStyleBackColor = true;
+            this.btnReg.Click += new System.EventHandler(this.BtnReg_Click);
             // 
-            // gbxBerakna
+            // tbxTid
             // 
-            this.gbxBerakna.Controls.Add(this.button1);
-            this.gbxBerakna.Controls.Add(this.textBox6);
-            this.gbxBerakna.Controls.Add(this.textBox5);
-            this.gbxBerakna.Controls.Add(this.label6);
-            this.gbxBerakna.Controls.Add(this.label5);
-            this.gbxBerakna.Location = new System.Drawing.Point(23, 263);
-            this.gbxBerakna.Name = "gbxBerakna";
-            this.gbxBerakna.Size = new System.Drawing.Size(349, 107);
-            this.gbxBerakna.TabIndex = 2;
-            this.gbxBerakna.TabStop = false;
-            this.gbxBerakna.Text = "Beräkna pris på vald rapport";
+            this.tbxTid.Location = new System.Drawing.Point(123, 72);
+            this.tbxTid.Name = "tbxTid";
+            this.tbxTid.Size = new System.Drawing.Size(100, 20);
+            this.tbxTid.TabIndex = 3;
             // 
-            // listBox1
+            // tbxKund
             // 
-            this.listBox1.FormattingEnabled = true;
-            this.listBox1.Location = new System.Drawing.Point(388, 25);
-            this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(182, 342);
-            this.listBox1.TabIndex = 3;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(22, 35);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(32, 13);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Kund";
+            this.tbxKund.Location = new System.Drawing.Point(123, 35);
+            this.tbxKund.Name = "tbxKund";
+            this.tbxKund.Size = new System.Drawing.Size(100, 20);
+            this.tbxKund.TabIndex = 2;
             // 
             // label2
             // 
@@ -120,14 +99,52 @@
             this.label2.TabIndex = 1;
             this.label2.Text = "Tid (min.)";
             // 
-            // label3
+            // label1
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(22, 30);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(77, 13);
-            this.label3.TabIndex = 2;
-            this.label3.Text = "Gammalt namn";
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(22, 35);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(32, 13);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Kund";
+            // 
+            // gbxAndra
+            // 
+            this.gbxAndra.Controls.Add(this.btnAndra);
+            this.gbxAndra.Controls.Add(this.tbxNyttNamn);
+            this.gbxAndra.Controls.Add(this.tbxGamNamn);
+            this.gbxAndra.Controls.Add(this.label4);
+            this.gbxAndra.Controls.Add(this.label3);
+            this.gbxAndra.Location = new System.Drawing.Point(23, 137);
+            this.gbxAndra.Name = "gbxAndra";
+            this.gbxAndra.Size = new System.Drawing.Size(349, 107);
+            this.gbxAndra.TabIndex = 1;
+            this.gbxAndra.TabStop = false;
+            this.gbxAndra.Text = "Ändra kundnamn";
+            // 
+            // btnAndra
+            // 
+            this.btnAndra.Location = new System.Drawing.Point(245, 61);
+            this.btnAndra.Name = "btnAndra";
+            this.btnAndra.Size = new System.Drawing.Size(75, 23);
+            this.btnAndra.TabIndex = 6;
+            this.btnAndra.Text = "Ändra";
+            this.btnAndra.UseVisualStyleBackColor = true;
+            this.btnAndra.Click += new System.EventHandler(this.BtnAndra_Click);
+            // 
+            // tbxNyttNamn
+            // 
+            this.tbxNyttNamn.Location = new System.Drawing.Point(123, 63);
+            this.tbxNyttNamn.Name = "tbxNyttNamn";
+            this.tbxNyttNamn.Size = new System.Drawing.Size(100, 20);
+            this.tbxNyttNamn.TabIndex = 5;
+            // 
+            // tbxGamNamn
+            // 
+            this.tbxGamNamn.Location = new System.Drawing.Point(123, 30);
+            this.tbxGamNamn.Name = "tbxGamNamn";
+            this.tbxGamNamn.Size = new System.Drawing.Size(100, 20);
+            this.tbxGamNamn.TabIndex = 4;
             // 
             // label4
             // 
@@ -138,14 +155,52 @@
             this.label4.TabIndex = 3;
             this.label4.Text = "Nytt namn";
             // 
-            // label5
+            // label3
             // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(22, 31);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(57, 13);
-            this.label5.TabIndex = 4;
-            this.label5.Text = "Timarvode";
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(22, 30);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(77, 13);
+            this.label3.TabIndex = 2;
+            this.label3.Text = "Gammalt namn";
+            // 
+            // gbxBerakna
+            // 
+            this.gbxBerakna.Controls.Add(this.btnBer);
+            this.gbxBerakna.Controls.Add(this.tbxPris);
+            this.gbxBerakna.Controls.Add(this.tbxTim);
+            this.gbxBerakna.Controls.Add(this.label6);
+            this.gbxBerakna.Controls.Add(this.label5);
+            this.gbxBerakna.Location = new System.Drawing.Point(23, 263);
+            this.gbxBerakna.Name = "gbxBerakna";
+            this.gbxBerakna.Size = new System.Drawing.Size(349, 107);
+            this.gbxBerakna.TabIndex = 2;
+            this.gbxBerakna.TabStop = false;
+            this.gbxBerakna.Text = "Beräkna pris på vald rapport";
+            // 
+            // btnBer
+            // 
+            this.btnBer.Location = new System.Drawing.Point(245, 62);
+            this.btnBer.Name = "btnBer";
+            this.btnBer.Size = new System.Drawing.Size(75, 23);
+            this.btnBer.TabIndex = 8;
+            this.btnBer.Text = "Beräkna";
+            this.btnBer.UseVisualStyleBackColor = true;
+            this.btnBer.Click += new System.EventHandler(this.BtnBer_Click);
+            // 
+            // tbxPris
+            // 
+            this.tbxPris.Location = new System.Drawing.Point(123, 67);
+            this.tbxPris.Name = "tbxPris";
+            this.tbxPris.Size = new System.Drawing.Size(100, 20);
+            this.tbxPris.TabIndex = 7;
+            // 
+            // tbxTim
+            // 
+            this.tbxTim.Location = new System.Drawing.Point(123, 31);
+            this.tbxTim.Name = "tbxTim";
+            this.tbxTim.Size = new System.Drawing.Size(100, 20);
+            this.tbxTim.TabIndex = 6;
             // 
             // label6
             // 
@@ -156,81 +211,29 @@
             this.label6.TabIndex = 5;
             this.label6.Text = "Pris";
             // 
-            // textBox1
+            // label5
             // 
-            this.textBox1.Location = new System.Drawing.Point(123, 30);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 20);
-            this.textBox1.TabIndex = 4;
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(22, 31);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(57, 13);
+            this.label5.TabIndex = 4;
+            this.label5.Text = "Timarvode";
             // 
-            // textBox2
+            // lbxReg
             // 
-            this.textBox2.Location = new System.Drawing.Point(123, 63);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(100, 20);
-            this.textBox2.TabIndex = 5;
-            // 
-            // textBox3
-            // 
-            this.textBox3.Location = new System.Drawing.Point(123, 35);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(100, 20);
-            this.textBox3.TabIndex = 2;
-            // 
-            // textBox4
-            // 
-            this.textBox4.Location = new System.Drawing.Point(123, 72);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(100, 20);
-            this.textBox4.TabIndex = 3;
-            // 
-            // textBox5
-            // 
-            this.textBox5.Location = new System.Drawing.Point(123, 31);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(100, 20);
-            this.textBox5.TabIndex = 6;
-            // 
-            // textBox6
-            // 
-            this.textBox6.Location = new System.Drawing.Point(123, 67);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(100, 20);
-            this.textBox6.TabIndex = 7;
-            // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(245, 62);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 8;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = true;
-            // 
-            // button2
-            // 
-            this.button2.Location = new System.Drawing.Point(245, 61);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
-            this.button2.TabIndex = 6;
-            this.button2.Text = "button2";
-            this.button2.UseVisualStyleBackColor = true;
-            // 
-            // button3
-            // 
-            this.button3.Location = new System.Drawing.Point(245, 67);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(75, 23);
-            this.button3.TabIndex = 4;
-            this.button3.Text = "button3";
-            this.button3.UseVisualStyleBackColor = true;
+            this.lbxReg.FormattingEnabled = true;
+            this.lbxReg.Location = new System.Drawing.Point(388, 25);
+            this.lbxReg.Name = "lbxReg";
+            this.lbxReg.Size = new System.Drawing.Size(182, 342);
+            this.lbxReg.TabIndex = 3;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(589, 386);
-            this.Controls.Add(this.listBox1);
+            this.Controls.Add(this.lbxReg);
             this.Controls.Add(this.gbxBerakna);
             this.Controls.Add(this.gbxAndra);
             this.Controls.Add(this.gbxReg);
@@ -257,16 +260,16 @@
         private System.Windows.Forms.GroupBox gbxBerakna;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.ListBox listBox1;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.TextBox textBox6;
-        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.ListBox lbxReg;
+        private System.Windows.Forms.Button btnReg;
+        private System.Windows.Forms.TextBox tbxTid;
+        private System.Windows.Forms.TextBox tbxKund;
+        private System.Windows.Forms.Button btnAndra;
+        private System.Windows.Forms.TextBox tbxNyttNamn;
+        private System.Windows.Forms.Button btnBer;
+        private System.Windows.Forms.TextBox tbxTim;
+        private System.Windows.Forms.TextBox tbxPris;
+        private System.Windows.Forms.TextBox tbxGamNamn;
     }
 }
 
