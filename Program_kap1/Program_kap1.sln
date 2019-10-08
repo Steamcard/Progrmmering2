@@ -19,6 +19,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Styrketraning", "Styrketran
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tidrapportering", "Tidrapportering\Tidrapportering.csproj", "{7CAFF11D-5BAB-436E-A1EB-1EC8019064FE}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bilregister", "Bilregister\Bilregister.csproj", "{842ED34E-F6E9-477D-986C-71B2C8B8D8FC}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -57,6 +59,10 @@ Global
 		{7CAFF11D-5BAB-436E-A1EB-1EC8019064FE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7CAFF11D-5BAB-436E-A1EB-1EC8019064FE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7CAFF11D-5BAB-436E-A1EB-1EC8019064FE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{842ED34E-F6E9-477D-986C-71B2C8B8D8FC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{842ED34E-F6E9-477D-986C-71B2C8B8D8FC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{842ED34E-F6E9-477D-986C-71B2C8B8D8FC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{842ED34E-F6E9-477D-986C-71B2C8B8D8FC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
