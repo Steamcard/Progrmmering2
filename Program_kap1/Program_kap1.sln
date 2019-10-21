@@ -21,6 +21,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tidrapportering", "Tidrappo
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bilregister", "Bilregister\Bilregister.csproj", "{842ED34E-F6E9-477D-986C-71B2C8B8D8FC}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RegisterProgram", "RegisterProgram\RegisterProgram.csproj", "{41CBE21A-04D4-4929-A3BC-3CC1BF84E18D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -63,6 +65,10 @@ Global
 		{842ED34E-F6E9-477D-986C-71B2C8B8D8FC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{842ED34E-F6E9-477D-986C-71B2C8B8D8FC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{842ED34E-F6E9-477D-986C-71B2C8B8D8FC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{41CBE21A-04D4-4929-A3BC-3CC1BF84E18D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{41CBE21A-04D4-4929-A3BC-3CC1BF84E18D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{41CBE21A-04D4-4929-A3BC-3CC1BF84E18D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{41CBE21A-04D4-4929-A3BC-3CC1BF84E18D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
