@@ -46,25 +46,25 @@
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.lbxReg = new System.Windows.Forms.ListBox();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.gbxBok = new System.Windows.Forms.GroupBox();
+            this.gbxLjud = new System.Windows.Forms.GroupBox();
+            this.gbxFilm = new System.Windows.Forms.GroupBox();
             this.label8 = new System.Windows.Forms.Label();
-            this.groupBox1.SuspendLayout();
-            this.groupBox2.SuspendLayout();
-            this.groupBox3.SuspendLayout();
+            this.gbxBok.SuspendLayout();
+            this.gbxLjud.SuspendLayout();
+            this.gbxFilm.SuspendLayout();
             this.SuspendLayout();
             // 
             // tbxTitelBok
             // 
-            this.tbxTitelBok.Location = new System.Drawing.Point(78, 61);
+            this.tbxTitelBok.Location = new System.Drawing.Point(78, 28);
             this.tbxTitelBok.Name = "tbxTitelBok";
             this.tbxTitelBok.Size = new System.Drawing.Size(100, 20);
             this.tbxTitelBok.TabIndex = 0;
             // 
             // tbxSidorBok
             // 
-            this.tbxSidorBok.Location = new System.Drawing.Point(78, 28);
+            this.tbxSidorBok.Location = new System.Drawing.Point(78, 61);
             this.tbxSidorBok.Name = "tbxSidorBok";
             this.tbxSidorBok.Size = new System.Drawing.Size(100, 20);
             this.tbxSidorBok.TabIndex = 1;
@@ -205,49 +205,49 @@
             this.lbxReg.Size = new System.Drawing.Size(644, 173);
             this.lbxReg.TabIndex = 17;
             // 
-            // groupBox1
+            // gbxBok
             // 
-            this.groupBox1.Controls.Add(this.tbxSidorBok);
-            this.groupBox1.Controls.Add(this.tbxTitelBok);
-            this.groupBox1.Controls.Add(this.label1);
-            this.groupBox1.Controls.Add(this.label2);
-            this.groupBox1.Controls.Add(this.btnRegBok);
-            this.groupBox1.Location = new System.Drawing.Point(12, 12);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(211, 154);
-            this.groupBox1.TabIndex = 18;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "groupBox1";
+            this.gbxBok.Controls.Add(this.tbxSidorBok);
+            this.gbxBok.Controls.Add(this.tbxTitelBok);
+            this.gbxBok.Controls.Add(this.label1);
+            this.gbxBok.Controls.Add(this.label2);
+            this.gbxBok.Controls.Add(this.btnRegBok);
+            this.gbxBok.Location = new System.Drawing.Point(12, 12);
+            this.gbxBok.Name = "gbxBok";
+            this.gbxBok.Size = new System.Drawing.Size(211, 154);
+            this.gbxBok.TabIndex = 18;
+            this.gbxBok.TabStop = false;
+            this.gbxBok.Text = "Bok";
             // 
-            // groupBox2
+            // gbxLjud
             // 
-            this.groupBox2.Controls.Add(this.tbxSpeltidLjud);
-            this.groupBox2.Controls.Add(this.tbxTitelLjud);
-            this.groupBox2.Controls.Add(this.label3);
-            this.groupBox2.Controls.Add(this.label4);
-            this.groupBox2.Controls.Add(this.btnRegLjud);
-            this.groupBox2.Location = new System.Drawing.Point(229, 12);
-            this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(211, 154);
-            this.groupBox2.TabIndex = 19;
-            this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "groupBox2";
+            this.gbxLjud.Controls.Add(this.tbxSpeltidLjud);
+            this.gbxLjud.Controls.Add(this.tbxTitelLjud);
+            this.gbxLjud.Controls.Add(this.label3);
+            this.gbxLjud.Controls.Add(this.label4);
+            this.gbxLjud.Controls.Add(this.btnRegLjud);
+            this.gbxLjud.Location = new System.Drawing.Point(229, 12);
+            this.gbxLjud.Name = "gbxLjud";
+            this.gbxLjud.Size = new System.Drawing.Size(211, 154);
+            this.gbxLjud.TabIndex = 19;
+            this.gbxLjud.TabStop = false;
+            this.gbxLjud.Text = "Ljudspår";
             // 
-            // groupBox3
+            // gbxFilm
             // 
-            this.groupBox3.Controls.Add(this.tbxTitelFilm);
-            this.groupBox3.Controls.Add(this.tbxSpeltidFilm);
-            this.groupBox3.Controls.Add(this.tbxUppFilm);
-            this.groupBox3.Controls.Add(this.label5);
-            this.groupBox3.Controls.Add(this.tbnRegFilm);
-            this.groupBox3.Controls.Add(this.label7);
-            this.groupBox3.Controls.Add(this.label6);
-            this.groupBox3.Location = new System.Drawing.Point(446, 12);
-            this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(211, 154);
-            this.groupBox3.TabIndex = 20;
-            this.groupBox3.TabStop = false;
-            this.groupBox3.Text = "groupBox3";
+            this.gbxFilm.Controls.Add(this.tbxTitelFilm);
+            this.gbxFilm.Controls.Add(this.tbxSpeltidFilm);
+            this.gbxFilm.Controls.Add(this.tbxUppFilm);
+            this.gbxFilm.Controls.Add(this.label5);
+            this.gbxFilm.Controls.Add(this.tbnRegFilm);
+            this.gbxFilm.Controls.Add(this.label7);
+            this.gbxFilm.Controls.Add(this.label6);
+            this.gbxFilm.Location = new System.Drawing.Point(446, 12);
+            this.gbxFilm.Name = "gbxFilm";
+            this.gbxFilm.Size = new System.Drawing.Size(211, 154);
+            this.gbxFilm.TabIndex = 20;
+            this.gbxFilm.TabStop = false;
+            this.gbxFilm.Text = "Film";
             // 
             // label8
             // 
@@ -265,18 +265,18 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(668, 391);
             this.Controls.Add(this.label8);
-            this.Controls.Add(this.groupBox3);
-            this.Controls.Add(this.groupBox2);
-            this.Controls.Add(this.groupBox1);
+            this.Controls.Add(this.gbxFilm);
+            this.Controls.Add(this.gbxLjud);
+            this.Controls.Add(this.gbxBok);
             this.Controls.Add(this.lbxReg);
             this.Name = "Form1";
             this.Text = "Form1";
-            this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
-            this.groupBox2.ResumeLayout(false);
-            this.groupBox2.PerformLayout();
-            this.groupBox3.ResumeLayout(false);
-            this.groupBox3.PerformLayout();
+            this.gbxBok.ResumeLayout(false);
+            this.gbxBok.PerformLayout();
+            this.gbxLjud.ResumeLayout(false);
+            this.gbxLjud.PerformLayout();
+            this.gbxFilm.ResumeLayout(false);
+            this.gbxFilm.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -302,9 +302,9 @@
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.ListBox lbxReg;
-        private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.GroupBox groupBox2;
-        private System.Windows.Forms.GroupBox groupBox3;
+        private System.Windows.Forms.GroupBox gbxBok;
+        private System.Windows.Forms.GroupBox gbxLjud;
+        private System.Windows.Forms.GroupBox gbxFilm;
         private System.Windows.Forms.Label label8;
     }
 }
