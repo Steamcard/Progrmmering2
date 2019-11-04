@@ -29,43 +29,44 @@
         private void InitializeComponent()
         {
             this.gbxSaljare = new System.Windows.Forms.GroupBox();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.gbxKonsult = new System.Windows.Forms.GroupBox();
+            this.gbxKontorist = new System.Windows.Forms.GroupBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
+            this.label = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.textBox7 = new System.Windows.Forms.TextBox();
-            this.textBox8 = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.listBox1 = new System.Windows.Forms.ListBox();
-            this.listBox2 = new System.Windows.Forms.ListBox();
+            this.tbxSaljareNamn = new System.Windows.Forms.TextBox();
+            this.tbxProvision = new System.Windows.Forms.TextBox();
+            this.tbxForsaljning = new System.Windows.Forms.TextBox();
+            this.tbxKonsultNamn = new System.Windows.Forms.TextBox();
+            this.tbxTimlon = new System.Windows.Forms.TextBox();
+            this.tbxArbetadTid = new System.Windows.Forms.TextBox();
+            this.tbxKontoristNamn = new System.Windows.Forms.TextBox();
+            this.tbxManadLon = new System.Windows.Forms.TextBox();
+            this.btnBeraknaLon = new System.Windows.Forms.Button();
+            this.btnSaljareReg = new System.Windows.Forms.Button();
+            this.btnKonsultReg = new System.Windows.Forms.Button();
+            this.btnKontoristReg = new System.Windows.Forms.Button();
+            this.lbxRegister = new System.Windows.Forms.ListBox();
+            this.lbxLoner = new System.Windows.Forms.ListBox();
+            this.lbxTotLon = new System.Windows.Forms.ListBox();
             this.gbxSaljare.SuspendLayout();
-            this.groupBox2.SuspendLayout();
-            this.groupBox3.SuspendLayout();
+            this.gbxKonsult.SuspendLayout();
+            this.gbxKontorist.SuspendLayout();
             this.SuspendLayout();
             // 
             // gbxSaljare
             // 
-            this.gbxSaljare.Controls.Add(this.button2);
-            this.gbxSaljare.Controls.Add(this.textBox3);
-            this.gbxSaljare.Controls.Add(this.textBox2);
-            this.gbxSaljare.Controls.Add(this.textBox1);
-            this.gbxSaljare.Controls.Add(this.label3);
+            this.gbxSaljare.Controls.Add(this.btnSaljareReg);
+            this.gbxSaljare.Controls.Add(this.tbxForsaljning);
+            this.gbxSaljare.Controls.Add(this.tbxProvision);
+            this.gbxSaljare.Controls.Add(this.tbxSaljareNamn);
+            this.gbxSaljare.Controls.Add(this.label);
             this.gbxSaljare.Controls.Add(this.label2);
             this.gbxSaljare.Controls.Add(this.label1);
             this.gbxSaljare.Location = new System.Drawing.Point(12, 12);
@@ -75,37 +76,36 @@
             this.gbxSaljare.TabStop = false;
             this.gbxSaljare.Text = "Säljare";
             // 
-            // groupBox2
+            // gbxKonsult
             // 
-            this.groupBox2.Controls.Add(this.button3);
-            this.groupBox2.Controls.Add(this.textBox6);
-            this.groupBox2.Controls.Add(this.textBox5);
-            this.groupBox2.Controls.Add(this.textBox4);
-            this.groupBox2.Controls.Add(this.label6);
-            this.groupBox2.Controls.Add(this.label5);
-            this.groupBox2.Controls.Add(this.label4);
-            this.groupBox2.Location = new System.Drawing.Point(268, 13);
-            this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(217, 297);
-            this.groupBox2.TabIndex = 1;
-            this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "groupBox2";
-            this.groupBox2.Enter += new System.EventHandler(this.groupBox2_Enter);
+            this.gbxKonsult.Controls.Add(this.btnKonsultReg);
+            this.gbxKonsult.Controls.Add(this.tbxArbetadTid);
+            this.gbxKonsult.Controls.Add(this.tbxTimlon);
+            this.gbxKonsult.Controls.Add(this.tbxKonsultNamn);
+            this.gbxKonsult.Controls.Add(this.label6);
+            this.gbxKonsult.Controls.Add(this.label5);
+            this.gbxKonsult.Controls.Add(this.label4);
+            this.gbxKonsult.Location = new System.Drawing.Point(268, 13);
+            this.gbxKonsult.Name = "gbxKonsult";
+            this.gbxKonsult.Size = new System.Drawing.Size(217, 297);
+            this.gbxKonsult.TabIndex = 1;
+            this.gbxKonsult.TabStop = false;
+            this.gbxKonsult.Text = "Konsult";
+            this.gbxKonsult.Enter += new System.EventHandler(this.groupBox2_Enter);
             // 
-            // groupBox3
+            // gbxKontorist
             // 
-            this.groupBox3.Controls.Add(this.button4);
-            this.groupBox3.Controls.Add(this.textBox8);
-            this.groupBox3.Controls.Add(this.textBox7);
-            this.groupBox3.Controls.Add(this.label9);
-            this.groupBox3.Controls.Add(this.label8);
-            this.groupBox3.Controls.Add(this.label7);
-            this.groupBox3.Location = new System.Drawing.Point(511, 13);
-            this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(227, 297);
-            this.groupBox3.TabIndex = 2;
-            this.groupBox3.TabStop = false;
-            this.groupBox3.Text = "groupBox3";
+            this.gbxKontorist.Controls.Add(this.btnKontoristReg);
+            this.gbxKontorist.Controls.Add(this.tbxManadLon);
+            this.gbxKontorist.Controls.Add(this.tbxKontoristNamn);
+            this.gbxKontorist.Controls.Add(this.label8);
+            this.gbxKontorist.Controls.Add(this.label7);
+            this.gbxKontorist.Location = new System.Drawing.Point(511, 13);
+            this.gbxKontorist.Name = "gbxKontorist";
+            this.gbxKontorist.Size = new System.Drawing.Size(227, 297);
+            this.gbxKontorist.TabIndex = 2;
+            this.gbxKontorist.TabStop = false;
+            this.gbxKontorist.Text = "Kontorist";
             // 
             // label1
             // 
@@ -114,25 +114,25 @@
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(35, 13);
             this.label1.TabIndex = 0;
-            this.label1.Text = "label1";
+            this.label1.Text = "Namn";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(41, 86);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(35, 13);
+            this.label2.Size = new System.Drawing.Size(50, 13);
             this.label2.TabIndex = 1;
-            this.label2.Text = "label2";
+            this.label2.Text = "Provision";
             // 
-            // label3
+            // label
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(41, 132);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(35, 13);
-            this.label3.TabIndex = 2;
-            this.label3.Text = "label3";
+            this.label.AutoSize = true;
+            this.label.Location = new System.Drawing.Point(41, 132);
+            this.label.Name = "label";
+            this.label.Size = new System.Drawing.Size(57, 13);
+            this.label.TabIndex = 2;
+            this.label.Text = "Försäljning";
             // 
             // label4
             // 
@@ -141,25 +141,25 @@
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(35, 13);
             this.label4.TabIndex = 0;
-            this.label4.Text = "label4";
+            this.label4.Text = "Namn";
             // 
             // label5
             // 
             this.label5.AutoSize = true;
             this.label5.Location = new System.Drawing.Point(21, 80);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(35, 13);
+            this.label5.Size = new System.Drawing.Size(38, 13);
             this.label5.TabIndex = 1;
-            this.label5.Text = "label5";
+            this.label5.Text = "Timlön";
             // 
             // label6
             // 
             this.label6.AutoSize = true;
             this.label6.Location = new System.Drawing.Point(25, 131);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(35, 13);
+            this.label6.Size = new System.Drawing.Size(58, 13);
             this.label6.TabIndex = 2;
-            this.label6.Text = "label6";
+            this.label6.Text = "Arbetad tid";
             // 
             // label7
             // 
@@ -168,185 +168,198 @@
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(35, 13);
             this.label7.TabIndex = 0;
-            this.label7.Text = "label7";
+            this.label7.Text = "Namn";
             // 
             // label8
             // 
             this.label8.AutoSize = true;
             this.label8.Location = new System.Drawing.Point(16, 80);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(35, 13);
+            this.label8.Size = new System.Drawing.Size(59, 13);
             this.label8.TabIndex = 1;
-            this.label8.Text = "label8";
+            this.label8.Text = "Månadslön";
             // 
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(24, 125);
+            this.label9.Location = new System.Drawing.Point(508, 412);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(35, 13);
+            this.label9.Size = new System.Drawing.Size(92, 13);
             this.label9.TabIndex = 2;
-            this.label9.Text = "label9";
+            this.label9.Text = "Total lönekostnad";
             // 
-            // textBox1
+            // tbxSaljareNamn
             // 
-            this.textBox1.Location = new System.Drawing.Point(108, 39);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 20);
-            this.textBox1.TabIndex = 3;
+            this.tbxSaljareNamn.Location = new System.Drawing.Point(108, 39);
+            this.tbxSaljareNamn.Name = "tbxSaljareNamn";
+            this.tbxSaljareNamn.Size = new System.Drawing.Size(100, 20);
+            this.tbxSaljareNamn.TabIndex = 3;
             // 
-            // textBox2
+            // tbxProvision
             // 
-            this.textBox2.Location = new System.Drawing.Point(108, 83);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(100, 20);
-            this.textBox2.TabIndex = 4;
+            this.tbxProvision.Location = new System.Drawing.Point(108, 83);
+            this.tbxProvision.Name = "tbxProvision";
+            this.tbxProvision.Size = new System.Drawing.Size(100, 20);
+            this.tbxProvision.TabIndex = 4;
             // 
-            // textBox3
+            // tbxForsaljning
             // 
-            this.textBox3.Location = new System.Drawing.Point(108, 126);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(100, 20);
-            this.textBox3.TabIndex = 5;
+            this.tbxForsaljning.Location = new System.Drawing.Point(108, 126);
+            this.tbxForsaljning.Name = "tbxForsaljning";
+            this.tbxForsaljning.Size = new System.Drawing.Size(100, 20);
+            this.tbxForsaljning.TabIndex = 5;
             // 
-            // textBox4
+            // tbxKonsultNamn
             // 
-            this.textBox4.Location = new System.Drawing.Point(95, 38);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(100, 20);
-            this.textBox4.TabIndex = 3;
+            this.tbxKonsultNamn.Location = new System.Drawing.Point(95, 38);
+            this.tbxKonsultNamn.Name = "tbxKonsultNamn";
+            this.tbxKonsultNamn.Size = new System.Drawing.Size(100, 20);
+            this.tbxKonsultNamn.TabIndex = 3;
             // 
-            // textBox5
+            // tbxTimlon
             // 
-            this.textBox5.Location = new System.Drawing.Point(95, 82);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(100, 20);
-            this.textBox5.TabIndex = 4;
+            this.tbxTimlon.Location = new System.Drawing.Point(95, 82);
+            this.tbxTimlon.Name = "tbxTimlon";
+            this.tbxTimlon.Size = new System.Drawing.Size(100, 20);
+            this.tbxTimlon.TabIndex = 4;
             // 
-            // textBox6
+            // tbxArbetadTid
             // 
-            this.textBox6.Location = new System.Drawing.Point(95, 125);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(100, 20);
-            this.textBox6.TabIndex = 5;
+            this.tbxArbetadTid.Location = new System.Drawing.Point(95, 125);
+            this.tbxArbetadTid.Name = "tbxArbetadTid";
+            this.tbxArbetadTid.Size = new System.Drawing.Size(100, 20);
+            this.tbxArbetadTid.TabIndex = 5;
             // 
-            // textBox7
+            // tbxKontoristNamn
             // 
-            this.textBox7.Location = new System.Drawing.Point(106, 38);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(100, 20);
-            this.textBox7.TabIndex = 3;
+            this.tbxKontoristNamn.Location = new System.Drawing.Point(106, 38);
+            this.tbxKontoristNamn.Name = "tbxKontoristNamn";
+            this.tbxKontoristNamn.Size = new System.Drawing.Size(100, 20);
+            this.tbxKontoristNamn.TabIndex = 3;
             // 
-            // textBox8
+            // tbxManadLon
             // 
-            this.textBox8.Location = new System.Drawing.Point(106, 82);
-            this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(100, 20);
-            this.textBox8.TabIndex = 4;
+            this.tbxManadLon.Location = new System.Drawing.Point(106, 82);
+            this.tbxManadLon.Name = "tbxManadLon";
+            this.tbxManadLon.Size = new System.Drawing.Size(100, 20);
+            this.tbxManadLon.TabIndex = 4;
             // 
-            // button1
+            // btnBeraknaLon
             // 
-            this.button1.Location = new System.Drawing.Point(784, 151);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 3;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnBeraknaLon.Location = new System.Drawing.Point(511, 337);
+            this.btnBeraknaLon.Name = "btnBeraknaLon";
+            this.btnBeraknaLon.Size = new System.Drawing.Size(227, 23);
+            this.btnBeraknaLon.TabIndex = 3;
+            this.btnBeraknaLon.Text = "Beräkna löner";
+            this.btnBeraknaLon.UseVisualStyleBackColor = true;
             // 
-            // button2
+            // btnSaljareReg
             // 
-            this.button2.Location = new System.Drawing.Point(57, 265);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(112, 23);
-            this.button2.TabIndex = 6;
-            this.button2.Text = "Registrera";
-            this.button2.UseVisualStyleBackColor = true;
+            this.btnSaljareReg.Location = new System.Drawing.Point(44, 265);
+            this.btnSaljareReg.Name = "btnSaljareReg";
+            this.btnSaljareReg.Size = new System.Drawing.Size(151, 23);
+            this.btnSaljareReg.TabIndex = 6;
+            this.btnSaljareReg.Text = "Registrera försäljning";
+            this.btnSaljareReg.UseVisualStyleBackColor = true;
+            this.btnSaljareReg.Click += new System.EventHandler(this.btnSaljareReg_Click);
             // 
-            // button3
+            // btnKonsultReg
             // 
-            this.button3.Location = new System.Drawing.Point(51, 264);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(112, 23);
-            this.button3.TabIndex = 6;
-            this.button3.Text = "Registrera";
-            this.button3.UseVisualStyleBackColor = true;
+            this.btnKonsultReg.Location = new System.Drawing.Point(39, 264);
+            this.btnKonsultReg.Name = "btnKonsultReg";
+            this.btnKonsultReg.Size = new System.Drawing.Size(144, 23);
+            this.btnKonsultReg.TabIndex = 6;
+            this.btnKonsultReg.Text = "Registrera arbetspass";
+            this.btnKonsultReg.UseVisualStyleBackColor = true;
             // 
-            // button4
+            // btnKontoristReg
             // 
-            this.button4.Location = new System.Drawing.Point(60, 264);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(112, 23);
-            this.button4.TabIndex = 5;
-            this.button4.Text = "Registrera";
-            this.button4.UseVisualStyleBackColor = true;
+            this.btnKontoristReg.Location = new System.Drawing.Point(47, 264);
+            this.btnKontoristReg.Name = "btnKontoristReg";
+            this.btnKontoristReg.Size = new System.Drawing.Size(146, 23);
+            this.btnKontoristReg.TabIndex = 5;
+            this.btnKontoristReg.Text = "Registrera månadslön";
+            this.btnKontoristReg.UseVisualStyleBackColor = true;
             // 
-            // listBox1
+            // lbxRegister
             // 
-            this.listBox1.FormattingEnabled = true;
-            this.listBox1.Location = new System.Drawing.Point(11, 337);
-            this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(231, 186);
-            this.listBox1.TabIndex = 4;
+            this.lbxRegister.FormattingEnabled = true;
+            this.lbxRegister.Location = new System.Drawing.Point(11, 337);
+            this.lbxRegister.Name = "lbxRegister";
+            this.lbxRegister.Size = new System.Drawing.Size(231, 186);
+            this.lbxRegister.TabIndex = 4;
             // 
-            // listBox2
+            // lbxLoner
             // 
-            this.listBox2.FormattingEnabled = true;
-            this.listBox2.Location = new System.Drawing.Point(268, 337);
-            this.listBox2.Name = "listBox2";
-            this.listBox2.Size = new System.Drawing.Size(217, 186);
-            this.listBox2.TabIndex = 5;
+            this.lbxLoner.FormattingEnabled = true;
+            this.lbxLoner.Location = new System.Drawing.Point(268, 337);
+            this.lbxLoner.Name = "lbxLoner";
+            this.lbxLoner.Size = new System.Drawing.Size(217, 186);
+            this.lbxLoner.TabIndex = 5;
+            // 
+            // lbxTotLon
+            // 
+            this.lbxTotLon.FormattingEnabled = true;
+            this.lbxTotLon.Location = new System.Drawing.Point(511, 428);
+            this.lbxTotLon.Name = "lbxTotLon";
+            this.lbxTotLon.Size = new System.Drawing.Size(227, 30);
+            this.lbxTotLon.TabIndex = 6;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(947, 555);
-            this.Controls.Add(this.listBox2);
-            this.Controls.Add(this.listBox1);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.groupBox3);
-            this.Controls.Add(this.groupBox2);
+            this.ClientSize = new System.Drawing.Size(746, 555);
+            this.Controls.Add(this.lbxTotLon);
+            this.Controls.Add(this.lbxLoner);
+            this.Controls.Add(this.lbxRegister);
+            this.Controls.Add(this.btnBeraknaLon);
+            this.Controls.Add(this.label9);
+            this.Controls.Add(this.gbxKontorist);
+            this.Controls.Add(this.gbxKonsult);
             this.Controls.Add(this.gbxSaljare);
             this.Name = "Form1";
             this.Text = "Form1";
             this.gbxSaljare.ResumeLayout(false);
             this.gbxSaljare.PerformLayout();
-            this.groupBox2.ResumeLayout(false);
-            this.groupBox2.PerformLayout();
-            this.groupBox3.ResumeLayout(false);
-            this.groupBox3.PerformLayout();
+            this.gbxKonsult.ResumeLayout(false);
+            this.gbxKonsult.PerformLayout();
+            this.gbxKontorist.ResumeLayout(false);
+            this.gbxKontorist.PerformLayout();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
 
         private System.Windows.Forms.GroupBox gbxSaljare;
-        private System.Windows.Forms.GroupBox groupBox2;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.GroupBox gbxKonsult;
+        private System.Windows.Forms.Button btnSaljareReg;
+        private System.Windows.Forms.TextBox tbxForsaljning;
+        private System.Windows.Forms.TextBox tbxProvision;
+        private System.Windows.Forms.TextBox tbxSaljareNamn;
+        private System.Windows.Forms.Label label;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.TextBox textBox6;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.Button btnKonsultReg;
+        private System.Windows.Forms.TextBox tbxArbetadTid;
+        private System.Windows.Forms.TextBox tbxTimlon;
+        private System.Windows.Forms.TextBox tbxKonsultNamn;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.GroupBox groupBox3;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.TextBox textBox8;
-        private System.Windows.Forms.TextBox textBox7;
+        private System.Windows.Forms.GroupBox gbxKontorist;
+        private System.Windows.Forms.Button btnKontoristReg;
+        private System.Windows.Forms.TextBox tbxManadLon;
+        private System.Windows.Forms.TextBox tbxKontoristNamn;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.ListBox listBox1;
-        private System.Windows.Forms.ListBox listBox2;
+        private System.Windows.Forms.Button btnBeraknaLon;
+        private System.Windows.Forms.ListBox lbxRegister;
+        private System.Windows.Forms.ListBox lbxLoner;
+        private System.Windows.Forms.ListBox lbxTotLon;
     }
 }
 

@@ -7,13 +7,7 @@ using System.Windows.Forms;
 
 namespace JobbLista1
 {
-    class Anställda
+    class Kontorist
     {
-        string _namn;
-    }
-
-    public protect Anställda(string namn)
-    {
-        this._namn = namn;
     }
 }
