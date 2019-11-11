@@ -10,10 +10,23 @@ namespace JobbLista1
     class Anställda
     {
         string _namn;
-    }
 
-    public protect Anställda(string namn)
-    {
-        this._namn = namn;
+        public Anställda(string namn)
+        {
+            this._namn = namn;
+        }
+
+        public string Namn
+        {
+            get
+            {
+                return this._namn;
+            }
+        }
+
+        public override string ToString()
+        {
+           return this._namn + 
+        }
     }
 }
