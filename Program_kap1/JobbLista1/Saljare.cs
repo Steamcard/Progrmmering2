@@ -9,14 +9,12 @@ namespace JobbLista1
 {
     class Saljare : Anställda
     {
-        string _namn;
         double _provision;
         double _forsaljning;
         double _beraknalon;
 
-        public Saljare(string namn, double provision, double forsaljning, double beraknalon)
+        public Saljare(string namn, double provision, double forsaljning, double beraknalon) : base(namn)
         {
-            this._namn = namn;
             this._provision = provision;
             this._forsaljning = forsaljning;
             this._beraknalon = beraknalon;
@@ -43,13 +41,21 @@ namespace JobbLista1
         {
             get
             {
-                return this.BeraknaLon;
+                return this._beraknalon;
+            }
+        }
+
+        public string saljare
+        {
+            get
+            {
+                return " (Säljare)";
             }
         }
 
         public override string ToString()
         {
-            return this._namn + " (Säljare): " + this._beraknalon;
+            return base._namn + " (Säljare): " + this._beraknalon;
         }
     }
 }

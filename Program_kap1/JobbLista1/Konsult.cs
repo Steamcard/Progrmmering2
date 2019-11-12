@@ -7,29 +7,20 @@ using System.Windows.Forms;
 
 namespace JobbLista1
 {
-    class Konsult
+    class Konsult : Anställda
     {
-        string _namn;
         double _timlon;
         double _aretadtid;
         double _beraknalon;
 
-        public Konsult(string namn, double timlon, double arbetadtid, double beraknalon)
+        public Konsult(string namn, double timlon, double arbetadtid, double beraknalon) : base(namn)
         {
-            this._namn = namn;
             this._timlon = timlon;
             this._aretadtid = arbetadtid;
             this._beraknalon = beraknalon;
             MessageBox.Show("Konsulten är registrerad!");
         }
 
-        public string Namn
-        {
-            get
-            {
-                return this._namn + " (Konsult)";
-            }
-        }
 
         public double TimLon
         {
@@ -55,9 +46,17 @@ namespace JobbLista1
             }
         }
 
+        public string konsult
+        {
+            get
+            {
+                return " (Konsult)";
+            }
+        }
+
         public override string ToString()
         {
-            return this._namn + " (Konsult): " + this._beraknalon;
+            return base._namn + " (Konsult): " + this._beraknalon;
         }
     }
 }

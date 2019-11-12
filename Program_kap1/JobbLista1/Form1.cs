@@ -35,6 +35,7 @@ namespace JobbLista1
 
             Saljare SaljareLista1 = new Saljare(_namn, _provision, _forsaljning, _beraknalon);
             SaljareLista.Add(SaljareLista1);
+            lbxRegister.Items.Add(_namn + SaljareLista1.saljare);
 
         }
 
@@ -47,6 +48,7 @@ namespace JobbLista1
 
             Konsult KonsultLista1 = new Konsult(_namn, _timlon, _arbetadTid, _beraknalon);
             KonsultLista.Add(KonsultLista1);
+            lbxRegister.Items.Add(_namn + KonsultLista1.konsult);
         }
 
         private void btnKontoristReg_Click(object sender, EventArgs e)
@@ -56,23 +58,56 @@ namespace JobbLista1
 
             Kontorist KontoristLista1 = new Kontorist(_namn, _monadslon);
             KontoristLista.Add(KontoristLista1);
+            lbxRegister.Items.Add(_namn + KontoristLista1.kontorist);
         }
 
         private void btnBeraknaLon_Click(object sender, EventArgs e)
         {
-            foreach(Saljare a in SaljareLista)
+            try
             {
-                lbxLoner.Items.Add(a.ToString());
+                lbxLoner.Items.Clear();
+
+                foreach (Saljare a in SaljareLista)
+                {
+                    lbxLoner.Items.Add(a.ToString());
+                }
+
+                foreach (Konsult a in KonsultLista)
+                {
+                    lbxLoner.Items.Add(a.ToString());
+                }
+
+                foreach (Kontorist a in KontoristLista)
+                {
+                    lbxLoner.Items.Add(a.ToString());
+                }
+            }
+            catch
+            {
+                lbxLoner.Items.Add("error");
             }
 
-            foreach(Konsult a in KonsultLista)
+            try
             {
-                lbxLoner.Items.Add(a.ToString());
-            }
+                double totalt = 0;
+                foreach (Saljare a in SaljareLista)
+                {
+                    totalt = totalt + a.BeraknaLon;
+                }
+                foreach (Konsult a in KonsultLista)
+                {
+                    totalt = totalt + a.BeraknaLon;
+                }
+                foreach (Kontorist a in KontoristLista)
+                {
+                    totalt = totalt + a.MonadsLon;
+                }
 
-            foreach(Kontorist a in KontoristLista)
+                lbxTotLon.Items.Add(totalt);
+            }
+            catch
             {
-                lbxLoner.Items.Add(a.ToString());
+                MessageBox.Show("Error med Total lön");
             }
         }
     }

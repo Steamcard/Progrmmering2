@@ -7,24 +7,14 @@ using System.Windows.Forms;
 
 namespace JobbLista1
 {
-    class Kontorist
+    class Kontorist : Anställda
     {
-        string _namn;
         double _monadslon;
 
-        public Kontorist(string namn, double monadslon)
+        public Kontorist(string namn, double monadslon) : base(namn)
         {
-            this._namn = namn;
             this._monadslon = monadslon;
             MessageBox.Show("Kontoristen är registrerad!");
-        }
-
-        public string Namn
-        {
-            get
-            {
-                return this._namn + " (Kontorist)";
-            }
         }
 
         public double MonadsLon
@@ -35,9 +25,17 @@ namespace JobbLista1
             }
         }
 
+        public string kontorist
+        {
+            get
+            {
+                return " (Kontorist)";
+            }
+        }
+
         public override string ToString()
         {
-            return this._namn + " (Kontorist): " + this._monadslon;
+            return base._namn + " (Kontorist): " + this._monadslon;
         }
     }
 }

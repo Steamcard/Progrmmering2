@@ -9,7 +9,7 @@ namespace JobbLista1
 {
     class Anställda
     {
-        string _namn;
+      protected  string _namn;
 
         public Anställda(string namn)
         {
@@ -26,7 +26,7 @@ namespace JobbLista1
 
         public override string ToString()
         {
-           return this._namn + 
+            return this._namn;
         }
     }
 }
