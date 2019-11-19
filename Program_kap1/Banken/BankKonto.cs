@@ -20,7 +20,7 @@ namespace Banken
             this._personNr = personNr;
             this._räntesats = räntesats;
             this._kredit = kredit;
-            MessageBox.Show("Kontot har registrerats!");
+            MessageBox.Show("Kontot har registrerats!");.
         }
     }
 }
