@@ -14,8 +14,7 @@ namespace Banken
     {
 
         List<BankKonto> Konto = new List<BankKonto>();
-        List<LåneKonto> Lån = new List<LåneKonto>();
-        List<SparKonto> Spar = new List<SparKonto>();
+ 
         public Form1()
         {
             InitializeComponent();
@@ -23,17 +22,30 @@ namespace Banken
 
         private void btnReg_Click(object sender, EventArgs e)
         {
+            double _kredit = 0;
             string _personNr = tbxPersonNr.Text;
             double _räntesats = double.Parse(tbxRantesats.Text);
-            double _kredit = double.Parse(tbxKredit.Text);
+            try
+            {
+                _kredit = double.Parse(tbxKredit.Text);
+                BankKonto Konto1 = new BankKonto(_personNr, _räntesats, _kredit);
+                lbxLista.Items.Add(Konto1);
+                Konto.Add(Konto1);
+            }
+            catch
+            {
+                BankKonto Konto1 = new BankKonto(_personNr, _räntesats, _kredit);
+                lbxLista.Items.Add(Konto1);
+                Konto.Add(Konto1);
+            }
 
-            BankKonto Konto1 = new BankKonto(_personNr, _räntesats, _kredit);
+
 
         }
 
         private void btnInsattning_Click(object sender, EventArgs e)
         {
-            double Belopp = double.Parse(tbxBelopp.Text);
+
         }
     }
 }

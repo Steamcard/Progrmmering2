@@ -6,7 +6,15 @@ using System.Threading.Tasks;
 
 namespace Banken
 {
-    class SparKonto
+    class SparKonto : BankKonto
     {
+        double _uttag;
+        double _beraknaranta;
+
+        public SparKonto(double uttag, double beraknaranta) : base(uttag, beraknaranta)
+        {
+            this._uttag = uttag;
+            this._beraknaranta = beraknaranta;
+        }
     }
 }

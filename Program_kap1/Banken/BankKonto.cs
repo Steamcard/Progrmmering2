@@ -7,10 +7,11 @@ using System.Windows.Forms;
 
 namespace Banken
 {
-    class BankKonto
+    abstract class BankKonto
     {
-        string _personNr;
-        double _räntesats;
+        protected string _personNr;
+        protected double  _räntesats;
+        protected double  behallning;
         double _kredit;
 
 
