@@ -9,17 +9,21 @@ namespace Banken
 {
     class BankKonto
     {
-        string _personNr;
-        double _räntesats;
-        double _kredit;
+        protected string _personr;
+        protected double _räntesats;
+        protected double _belopp;
 
-
-        public BankKonto(string personNr, double räntesats, double kredit)
+        public BankKonto(string persnr, double räntesats, double belopp )
         {
-            this._personNr = personNr;
+            this._personr = persnr;
             this._räntesats = räntesats;
-            this._kredit = kredit;
-            MessageBox.Show("Kontot har registrerats!");
+            this._belopp = belopp;
+        }
+
+
+        public override string ToString()
+        {
+            return this._personr;
         }
     }
 }
