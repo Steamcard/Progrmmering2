@@ -20,6 +20,38 @@ namespace Banken
             this._belopp = belopp;
         }
 
+        public void Insättning(double instättningsBelopp)
+        {
+            this._belopp += instättningsBelopp;
+        }
+
+        public bool Uttag(double uttagBelopp)
+        {
+            if (uttagBelopp > this._belopp)
+            {
+                return false;
+            }
+            else
+            {
+                this._belopp -= uttagBelopp;
+                return true;
+            }        
+           
+        }
+
+
+
+        public double Belopp
+        {
+            get
+            {
+                return this._belopp;
+            }
+            set
+            {
+                this.Belopp = value;
+            }
+        }
 
         public override string ToString()
         {

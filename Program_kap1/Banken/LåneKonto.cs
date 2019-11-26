@@ -17,9 +17,10 @@ namespace Banken
             MessageBox.Show("Kontot har registrerats som Lånekonto!");
         }
 
+
         public override string ToString()
         {
-            return "Lånekonto " + this._personr + " :"+ this._belopp;
+            return "(Lånekonto) " + this._personr + " :"+ this._belopp;
         }
     }
 }

@@ -29,20 +29,22 @@
         private void InitializeComponent()
         {
             this.gbxInUt = new System.Windows.Forms.GroupBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.tbxBelopp = new System.Windows.Forms.TextBox();
+            this.btnUttag = new System.Windows.Forms.Button();
+            this.btnInsattning = new System.Windows.Forms.Button();
             this.gbxOppna = new System.Windows.Forms.GroupBox();
+            this.lbxKredit = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.tbxKredit = new System.Windows.Forms.TextBox();
+            this.tbxRantesats = new System.Windows.Forms.TextBox();
+            this.tbxPersonNr = new System.Windows.Forms.TextBox();
+            this.btnReg = new System.Windows.Forms.Button();
             this.lbxLista = new System.Windows.Forms.ListBox();
             this.btnUppdatera = new System.Windows.Forms.Button();
-            this.btnReg = new System.Windows.Forms.Button();
-            this.btnInsattning = new System.Windows.Forms.Button();
-            this.btnUttag = new System.Windows.Forms.Button();
-            this.tbxBelopp = new System.Windows.Forms.TextBox();
-            this.tbxPersonNr = new System.Windows.Forms.TextBox();
-            this.tbxRantesats = new System.Windows.Forms.TextBox();
-            this.tbxKredit = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
+            this.rbtSpar = new System.Windows.Forms.RadioButton();
+            this.rbtLon = new System.Windows.Forms.RadioButton();
             this.gbxInUt.SuspendLayout();
             this.gbxOppna.SuspendLayout();
             this.SuspendLayout();
@@ -60,9 +62,47 @@
             this.gbxInUt.TabStop = false;
             this.gbxInUt.Text = "Insättning / Uttag";
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(7, 35);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(40, 13);
+            this.label1.TabIndex = 3;
+            this.label1.Text = "Belopp";
+            // 
+            // tbxBelopp
+            // 
+            this.tbxBelopp.Location = new System.Drawing.Point(82, 35);
+            this.tbxBelopp.Name = "tbxBelopp";
+            this.tbxBelopp.Size = new System.Drawing.Size(134, 20);
+            this.tbxBelopp.TabIndex = 2;
+            // 
+            // btnUttag
+            // 
+            this.btnUttag.Location = new System.Drawing.Point(116, 152);
+            this.btnUttag.Name = "btnUttag";
+            this.btnUttag.Size = new System.Drawing.Size(100, 23);
+            this.btnUttag.TabIndex = 1;
+            this.btnUttag.Text = "Uttag";
+            this.btnUttag.UseVisualStyleBackColor = true;
+            this.btnUttag.Click += new System.EventHandler(this.btnUttag_Click);
+            // 
+            // btnInsattning
+            // 
+            this.btnInsattning.Location = new System.Drawing.Point(116, 105);
+            this.btnInsattning.Name = "btnInsattning";
+            this.btnInsattning.Size = new System.Drawing.Size(100, 23);
+            this.btnInsattning.TabIndex = 0;
+            this.btnInsattning.Text = "Insättning";
+            this.btnInsattning.UseVisualStyleBackColor = true;
+            this.btnInsattning.Click += new System.EventHandler(this.btnInsattning_Click);
+            // 
             // gbxOppna
             // 
-            this.gbxOppna.Controls.Add(this.label4);
+            this.gbxOppna.Controls.Add(this.rbtLon);
+            this.gbxOppna.Controls.Add(this.rbtSpar);
+            this.gbxOppna.Controls.Add(this.lbxKredit);
             this.gbxOppna.Controls.Add(this.label3);
             this.gbxOppna.Controls.Add(this.label2);
             this.gbxOppna.Controls.Add(this.tbxKredit);
@@ -75,6 +115,64 @@
             this.gbxOppna.TabIndex = 1;
             this.gbxOppna.TabStop = false;
             this.gbxOppna.Text = "Öppna konto";
+            // 
+            // lbxKredit
+            // 
+            this.lbxKredit.AutoSize = true;
+            this.lbxKredit.Location = new System.Drawing.Point(6, 94);
+            this.lbxKredit.Name = "lbxKredit";
+            this.lbxKredit.Size = new System.Drawing.Size(34, 13);
+            this.lbxKredit.TabIndex = 6;
+            this.lbxKredit.Text = "Kredit";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(6, 62);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(55, 13);
+            this.label3.TabIndex = 5;
+            this.label3.Text = "Räntesats";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(6, 35);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(51, 13);
+            this.label2.TabIndex = 4;
+            this.label2.Text = "PersonNr";
+            // 
+            // tbxKredit
+            // 
+            this.tbxKredit.Location = new System.Drawing.Point(63, 91);
+            this.tbxKredit.Name = "tbxKredit";
+            this.tbxKredit.Size = new System.Drawing.Size(149, 20);
+            this.tbxKredit.TabIndex = 3;
+            // 
+            // tbxRantesats
+            // 
+            this.tbxRantesats.Location = new System.Drawing.Point(63, 59);
+            this.tbxRantesats.Name = "tbxRantesats";
+            this.tbxRantesats.Size = new System.Drawing.Size(149, 20);
+            this.tbxRantesats.TabIndex = 2;
+            // 
+            // tbxPersonNr
+            // 
+            this.tbxPersonNr.Location = new System.Drawing.Point(63, 28);
+            this.tbxPersonNr.Name = "tbxPersonNr";
+            this.tbxPersonNr.Size = new System.Drawing.Size(149, 20);
+            this.tbxPersonNr.TabIndex = 1;
+            // 
+            // btnReg
+            // 
+            this.btnReg.Location = new System.Drawing.Point(137, 151);
+            this.btnReg.Name = "btnReg";
+            this.btnReg.Size = new System.Drawing.Size(75, 23);
+            this.btnReg.TabIndex = 0;
+            this.btnReg.Text = "Registrera";
+            this.btnReg.UseVisualStyleBackColor = true;
+            this.btnReg.Click += new System.EventHandler(this.btnReg_Click);
             // 
             // lbxLista
             // 
@@ -93,98 +191,29 @@
             this.btnUppdatera.Text = "Uppdatera med årsränta";
             this.btnUppdatera.UseVisualStyleBackColor = true;
             // 
-            // btnReg
+            // rbtSpar
             // 
-            this.btnReg.Location = new System.Drawing.Point(137, 151);
-            this.btnReg.Name = "btnReg";
-            this.btnReg.Size = new System.Drawing.Size(75, 23);
-            this.btnReg.TabIndex = 0;
-            this.btnReg.Text = "Registrera";
-            this.btnReg.UseVisualStyleBackColor = true;
-            this.btnReg.Click += new System.EventHandler(this.btnReg_Click);
+            this.rbtSpar.AutoSize = true;
+            this.rbtSpar.Location = new System.Drawing.Point(20, 155);
+            this.rbtSpar.Name = "rbtSpar";
+            this.rbtSpar.Size = new System.Drawing.Size(74, 17);
+            this.rbtSpar.TabIndex = 7;
+            this.rbtSpar.TabStop = true;
+            this.rbtSpar.Text = "Sparkonto";
+            this.rbtSpar.UseVisualStyleBackColor = true;
+            this.rbtSpar.CheckedChanged += new System.EventHandler(this.rbtSpar_CheckedChanged);
             // 
-            // btnInsattning
+            // rbtLon
             // 
-            this.btnInsattning.Location = new System.Drawing.Point(116, 105);
-            this.btnInsattning.Name = "btnInsattning";
-            this.btnInsattning.Size = new System.Drawing.Size(100, 23);
-            this.btnInsattning.TabIndex = 0;
-            this.btnInsattning.Text = "Insättning";
-            this.btnInsattning.UseVisualStyleBackColor = true;
-            this.btnInsattning.Click += new System.EventHandler(this.btnInsattning_Click);
-            // 
-            // btnUttag
-            // 
-            this.btnUttag.Location = new System.Drawing.Point(116, 152);
-            this.btnUttag.Name = "btnUttag";
-            this.btnUttag.Size = new System.Drawing.Size(100, 23);
-            this.btnUttag.TabIndex = 1;
-            this.btnUttag.Text = "Uttag";
-            this.btnUttag.UseVisualStyleBackColor = true;
-            // 
-            // tbxBelopp
-            // 
-            this.tbxBelopp.Location = new System.Drawing.Point(82, 35);
-            this.tbxBelopp.Name = "tbxBelopp";
-            this.tbxBelopp.Size = new System.Drawing.Size(134, 20);
-            this.tbxBelopp.TabIndex = 2;
-            // 
-            // tbxPersonNr
-            // 
-            this.tbxPersonNr.Location = new System.Drawing.Point(63, 28);
-            this.tbxPersonNr.Name = "tbxPersonNr";
-            this.tbxPersonNr.Size = new System.Drawing.Size(149, 20);
-            this.tbxPersonNr.TabIndex = 1;
-            // 
-            // tbxRantesats
-            // 
-            this.tbxRantesats.Location = new System.Drawing.Point(63, 59);
-            this.tbxRantesats.Name = "tbxRantesats";
-            this.tbxRantesats.Size = new System.Drawing.Size(149, 20);
-            this.tbxRantesats.TabIndex = 2;
-            // 
-            // tbxKredit
-            // 
-            this.tbxKredit.Location = new System.Drawing.Point(63, 91);
-            this.tbxKredit.Name = "tbxKredit";
-            this.tbxKredit.Size = new System.Drawing.Size(149, 20);
-            this.tbxKredit.TabIndex = 3;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(7, 35);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(40, 13);
-            this.label1.TabIndex = 3;
-            this.label1.Text = "Belopp";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(6, 35);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(51, 13);
-            this.label2.TabIndex = 4;
-            this.label2.Text = "PersonNr";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(6, 62);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(55, 13);
-            this.label3.TabIndex = 5;
-            this.label3.Text = "Räntesats";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(6, 94);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(34, 13);
-            this.label4.TabIndex = 6;
-            this.label4.Text = "Kredit";
+            this.rbtLon.AutoSize = true;
+            this.rbtLon.Location = new System.Drawing.Point(20, 132);
+            this.rbtLon.Name = "rbtLon";
+            this.rbtLon.Size = new System.Drawing.Size(76, 17);
+            this.rbtLon.TabIndex = 8;
+            this.rbtLon.TabStop = true;
+            this.rbtLon.Text = "Lånekonto";
+            this.rbtLon.UseVisualStyleBackColor = true;
+            this.rbtLon.CheckedChanged += new System.EventHandler(this.rbtLon_CheckedChanged);
             // 
             // Form1
             // 
@@ -213,7 +242,7 @@
         private System.Windows.Forms.Button btnUttag;
         private System.Windows.Forms.Button btnInsattning;
         private System.Windows.Forms.GroupBox gbxOppna;
-        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label lbxKredit;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox tbxKredit;
@@ -222,6 +251,8 @@
         private System.Windows.Forms.Button btnReg;
         private System.Windows.Forms.ListBox lbxLista;
         private System.Windows.Forms.Button btnUppdatera;
+        private System.Windows.Forms.RadioButton rbtLon;
+        private System.Windows.Forms.RadioButton rbtSpar;
     }
 }
 

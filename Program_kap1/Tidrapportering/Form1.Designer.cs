@@ -227,6 +227,7 @@
             this.lbxReg.Name = "lbxReg";
             this.lbxReg.Size = new System.Drawing.Size(182, 342);
             this.lbxReg.TabIndex = 3;
+            this.lbxReg.SelectedIndexChanged += new System.EventHandler(this.lbxReg_SelectedIndexChanged);
             // 
             // Form1
             // 

@@ -14,8 +14,7 @@ namespace Banken
     {
 
         List<BankKonto> Konto = new List<BankKonto>();
-        List<LåneKonto> Lån = new List<LåneKonto>();
-        List<SparKonto> Spar = new List<SparKonto>();
+      
         double _kredit;
         double belopp = 0;
         public Form1()
@@ -29,14 +28,16 @@ namespace Banken
             double _räntesats = double.Parse(tbxRantesats.Text);
             try
             {
-               _kredit = double.Parse(tbxKredit.Text);
+                _kredit = double.Parse(tbxKredit.Text);
                 LåneKonto Lån1 = new LåneKonto(_personNr, _räntesats, _kredit, belopp);
+                Konto.Add(Lån1);
                 lbxLista.Items.Add(Lån1);
             }
             catch
             {
                 _kredit = 0;
                 SparKonto Spar1 = new SparKonto(_personNr, _räntesats, belopp);
+                Konto.Add(Spar1);
                 lbxLista.Items.Add(Spar1);
             }
 
@@ -44,18 +45,64 @@ namespace Banken
 
         private void btnInsattning_Click(object sender, EventArgs e)
         {
-            double belopp = double.Parse(tbxBelopp.Text);
-            //if(lbxLista.SelectedItem == )
-            //{
-            //    lbxLista.SelectedItems.Add(belopp);
-            //}
-            //else
-            //{
+            try
+            {
+                belopp = double.Parse(tbxBelopp.Text);
+                BankKonto b = lbxLista.SelectedItem as BankKonto;
+                b.Insättning(belopp);
 
-            //}
 
-            //foreach()
+                lbxLista.Items.Clear();
 
+                foreach(BankKonto x in Konto)
+                    {
+                        lbxLista.Items.Add(x);
+                    }
+
+                
+            }
+            catch
+            {
+                MessageBox.Show("Vänligen makera på listan och skriv in rätt belopp!");
+            }
+
+
+
+
+
+        }
+
+        private void btnUttag_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                belopp = double.Parse(tbxBelopp.Text);
+                BankKonto x = lbxLista.SelectedItem as BankKonto;
+                if(x.Uttag(belopp) == true)
+                {
+                    MessageBox.Show("Uttaget funkar!");
+                }
+                else
+                {
+                    MessageBox.Show("Uttaget misslyckades");
+                }
+            }
+            catch
+            {
+                MessageBox.Show("Vänligen makera på listan och skriv in rätt belopp!");
+            }
+        }
+
+        private void rbtSpar_CheckedChanged(object sender, EventArgs e)
+        {
+            tbxKredit.Visible = false;
+            lbxKredit.Visible = false;
+        }
+
+        private void rbtLon_CheckedChanged(object sender, EventArgs e)
+        {
+            tbxKredit.Visible = true;
+            lbxKredit.Visible = true;
         }
     }
 }

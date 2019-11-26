@@ -54,5 +54,10 @@ namespace Tidrapportering
         {
 
         }
+
+        private void lbxReg_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
