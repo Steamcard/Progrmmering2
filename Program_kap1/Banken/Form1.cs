@@ -15,7 +15,7 @@ namespace Banken
 
         List<BankKonto> Konto = new List<BankKonto>();
       
-        double _kredit;
+        double _kredit = 0;
         double belopp = 0;
         public Form1()
         {
@@ -81,6 +81,13 @@ namespace Banken
                 if(x.Uttag(belopp) == true)
                 {
                     MessageBox.Show("Uttaget funkar!");
+
+                    lbxLista.Items.Clear();
+
+                    foreach (BankKonto Z in Konto)
+                    {
+                        lbxLista.Items.Add(Z);
+                    }
                 }
                 else
                 {

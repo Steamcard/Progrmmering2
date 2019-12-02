@@ -25,7 +25,7 @@ namespace Banken
             this._belopp += instättningsBelopp;
         }
 
-        public bool Uttag(double uttagBelopp)
+        public virtual bool Uttag(double uttagBelopp)
         {
             if (uttagBelopp > this._belopp)
             {
@@ -35,6 +35,7 @@ namespace Banken
             {
                 this._belopp -= uttagBelopp;
                 return true;
+                
             }        
            
         }

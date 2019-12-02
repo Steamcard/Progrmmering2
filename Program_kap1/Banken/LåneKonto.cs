@@ -17,6 +17,20 @@ namespace Banken
             MessageBox.Show("Kontot har registrerats som Lånekonto!");
         }
 
+        public override bool Uttag(double uttagBelopp)
+        {
+            if (this._kredit + this._belopp < uttagBelopp)
+            {
+                return false;
+            }
+            else
+            {
+                this._belopp -= uttagBelopp;
+                return true;
+
+            }
+        }
+
 
         public override string ToString()
         {
