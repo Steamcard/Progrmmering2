@@ -51,7 +51,7 @@ namespace ovning3_3
             if(colores == DialogResult.OK)
             {
                 btnFarg.BackColor = colorDialog3.Color;
-                btnFarg.ForeColor = colorDialog3.Color;
+                btnFarg.ForeColor = colorDialog3.Color;s
             }
         }
     }
