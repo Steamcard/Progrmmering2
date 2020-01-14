@@ -31,6 +31,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ovning3_1", "ovning3_1\ovni
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ovning3_3", "ovning3_3\ovning3_3.csproj", "{94E3A35F-B928-4F27-B803-8846717162D7}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ovning3.5TaBControls", "Ovning3.5TaBControls\Ovning3.5TaBControls.csproj", "{F39773AA-70ED-4F21-BD44-4D3AFCB2244E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ovning3.6RichTextBox", "Ovning3.6RichTextBox\Ovning3.6RichTextBox.csproj", "{D9880671-2874-4E4E-876A-0D714418C9E6}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -93,6 +97,14 @@ Global
 		{94E3A35F-B928-4F27-B803-8846717162D7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{94E3A35F-B928-4F27-B803-8846717162D7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{94E3A35F-B928-4F27-B803-8846717162D7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F39773AA-70ED-4F21-BD44-4D3AFCB2244E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F39773AA-70ED-4F21-BD44-4D3AFCB2244E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F39773AA-70ED-4F21-BD44-4D3AFCB2244E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F39773AA-70ED-4F21-BD44-4D3AFCB2244E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D9880671-2874-4E4E-876A-0D714418C9E6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D9880671-2874-4E4E-876A-0D714418C9E6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D9880671-2874-4E4E-876A-0D714418C9E6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D9880671-2874-4E4E-876A-0D714418C9E6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -51,7 +51,25 @@ namespace ovning3_3
             if(colores == DialogResult.OK)
             {
                 btnFarg.BackColor = colorDialog3.Color;
-                btnFarg.ForeColor = colorDialog3.Color;s
+                btnFarg.ForeColor = colorDialog3.Color;
+            }
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            DialogResult f = folderBrowserDialog1.ShowDialog();
+            if (f == DialogResult.OK)
+            {
+                btnFolder.Text = folderBrowserDialog1.SelectedPath;
+            }
+        }
+
+        private void btnTecken_Click(object sender, EventArgs e)
+        {
+            DialogResult c = fontDialog1.ShowDialog();
+            if (c == DialogResult.OK)
+            {
+                btnFont.Font = fontDialog1.Font;
             }
         }
     }
