@@ -41,6 +41,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Fotbollsligan", "Fotbollsli
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bataljonen 3.8", "Bataljonen 3.8\Bataljonen 3.8.csproj", "{B8D45AB4-A0BE-4F1E-A469-00147461FE4B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Layout", "Layout\Layout.csproj", "{6861033F-7637-46B7-8C1F-9F2A5B0CAD59}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KundkorgenOvning", "KundkorgenOvning\KundkorgenOvning.csproj", "{FA40DA70-A8A5-4FC0-A8EE-BE106A2F6FCC}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -123,6 +127,14 @@ Global
 		{B8D45AB4-A0BE-4F1E-A469-00147461FE4B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B8D45AB4-A0BE-4F1E-A469-00147461FE4B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B8D45AB4-A0BE-4F1E-A469-00147461FE4B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6861033F-7637-46B7-8C1F-9F2A5B0CAD59}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6861033F-7637-46B7-8C1F-9F2A5B0CAD59}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6861033F-7637-46B7-8C1F-9F2A5B0CAD59}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6861033F-7637-46B7-8C1F-9F2A5B0CAD59}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FA40DA70-A8A5-4FC0-A8EE-BE106A2F6FCC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FA40DA70-A8A5-4FC0-A8EE-BE106A2F6FCC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FA40DA70-A8A5-4FC0-A8EE-BE106A2F6FCC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FA40DA70-A8A5-4FC0-A8EE-BE106A2F6FCC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

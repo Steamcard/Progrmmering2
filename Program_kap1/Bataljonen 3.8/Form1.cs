@@ -17,7 +17,8 @@ namespace Bataljonen_3._8
         private void TreeView1_AfterSelect(object sender, TreeViewEventArgs e)
         {
             TreeNode valdNod = treeView1.SelectedNode;
-            tbxVald.AppendText(valdNod.Name);
+            tbxVald.Clear();
+            tbxVald.AppendText(valdNod.Text);
             tbxOutput.Text = info[valdNod.Level];
             tbxOutput.AppendText("\r\nNamn: " + valdNod.Text);
 
