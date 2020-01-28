@@ -47,7 +47,7 @@ namespace KundkorgenOvning
             btnAdd.Location = new Point(313, locationVara);
 
             size += 37;
-            this.Size = new Size(392, size); ;
+            this.Size = new Size(392, size);
         }
     }
 }
