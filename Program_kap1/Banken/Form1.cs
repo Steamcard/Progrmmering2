@@ -111,5 +111,10 @@ namespace Banken
             tbxKredit.Visible = true;
             lbxKredit.Visible = true;
         }
+
+        private void btnUppdatera_Click(object sender, EventArgs e)
+        {
+            
+        }
     }
 }

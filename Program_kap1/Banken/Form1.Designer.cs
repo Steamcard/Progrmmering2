@@ -34,6 +34,8 @@
             this.btnUttag = new System.Windows.Forms.Button();
             this.btnInsattning = new System.Windows.Forms.Button();
             this.gbxOppna = new System.Windows.Forms.GroupBox();
+            this.rbtLon = new System.Windows.Forms.RadioButton();
+            this.rbtSpar = new System.Windows.Forms.RadioButton();
             this.lbxKredit = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -43,8 +45,6 @@
             this.btnReg = new System.Windows.Forms.Button();
             this.lbxLista = new System.Windows.Forms.ListBox();
             this.btnUppdatera = new System.Windows.Forms.Button();
-            this.rbtSpar = new System.Windows.Forms.RadioButton();
-            this.rbtLon = new System.Windows.Forms.RadioButton();
             this.gbxInUt.SuspendLayout();
             this.gbxOppna.SuspendLayout();
             this.SuspendLayout();
@@ -115,6 +115,30 @@
             this.gbxOppna.TabIndex = 1;
             this.gbxOppna.TabStop = false;
             this.gbxOppna.Text = "Öppna konto";
+            // 
+            // rbtLon
+            // 
+            this.rbtLon.AutoSize = true;
+            this.rbtLon.Location = new System.Drawing.Point(20, 132);
+            this.rbtLon.Name = "rbtLon";
+            this.rbtLon.Size = new System.Drawing.Size(76, 17);
+            this.rbtLon.TabIndex = 8;
+            this.rbtLon.TabStop = true;
+            this.rbtLon.Text = "Lånekonto";
+            this.rbtLon.UseVisualStyleBackColor = true;
+            this.rbtLon.CheckedChanged += new System.EventHandler(this.rbtLon_CheckedChanged);
+            // 
+            // rbtSpar
+            // 
+            this.rbtSpar.AutoSize = true;
+            this.rbtSpar.Location = new System.Drawing.Point(20, 155);
+            this.rbtSpar.Name = "rbtSpar";
+            this.rbtSpar.Size = new System.Drawing.Size(74, 17);
+            this.rbtSpar.TabIndex = 7;
+            this.rbtSpar.TabStop = true;
+            this.rbtSpar.Text = "Sparkonto";
+            this.rbtSpar.UseVisualStyleBackColor = true;
+            this.rbtSpar.CheckedChanged += new System.EventHandler(this.rbtSpar_CheckedChanged);
             // 
             // lbxKredit
             // 
@@ -190,30 +214,7 @@
             this.btnUppdatera.TabIndex = 3;
             this.btnUppdatera.Text = "Uppdatera med årsränta";
             this.btnUppdatera.UseVisualStyleBackColor = true;
-            // 
-            // rbtSpar
-            // 
-            this.rbtSpar.AutoSize = true;
-            this.rbtSpar.Location = new System.Drawing.Point(20, 155);
-            this.rbtSpar.Name = "rbtSpar";
-            this.rbtSpar.Size = new System.Drawing.Size(74, 17);
-            this.rbtSpar.TabIndex = 7;
-            this.rbtSpar.TabStop = true;
-            this.rbtSpar.Text = "Sparkonto";
-            this.rbtSpar.UseVisualStyleBackColor = true;
-            this.rbtSpar.CheckedChanged += new System.EventHandler(this.rbtSpar_CheckedChanged);
-            // 
-            // rbtLon
-            // 
-            this.rbtLon.AutoSize = true;
-            this.rbtLon.Location = new System.Drawing.Point(20, 132);
-            this.rbtLon.Name = "rbtLon";
-            this.rbtLon.Size = new System.Drawing.Size(76, 17);
-            this.rbtLon.TabIndex = 8;
-            this.rbtLon.TabStop = true;
-            this.rbtLon.Text = "Lånekonto";
-            this.rbtLon.UseVisualStyleBackColor = true;
-            this.rbtLon.CheckedChanged += new System.EventHandler(this.rbtLon_CheckedChanged);
+            this.btnUppdatera.Click += new System.EventHandler(this.btnUppdatera_Click);
             // 
             // Form1
             // 

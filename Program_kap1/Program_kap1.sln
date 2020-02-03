@@ -45,6 +45,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Layout", "Layout\Layout.csp
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KundkorgenOvning", "KundkorgenOvning\KundkorgenOvning.csproj", "{FA40DA70-A8A5-4FC0-A8EE-BE106A2F6FCC}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UserControl_3_11", "UserControl_3_11\UserControl_3_11.csproj", "{58E49F50-DA07-49B5-84F5-C21E63466732}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LabeledTextBox_3_12", "LabeledTextBox_3_12\LabeledTextBox_3_12.csproj", "{D5FD1D10-544E-450C-882B-4FB560813DDA}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -135,6 +139,14 @@ Global
 		{FA40DA70-A8A5-4FC0-A8EE-BE106A2F6FCC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FA40DA70-A8A5-4FC0-A8EE-BE106A2F6FCC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FA40DA70-A8A5-4FC0-A8EE-BE106A2F6FCC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{58E49F50-DA07-49B5-84F5-C21E63466732}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{58E49F50-DA07-49B5-84F5-C21E63466732}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{58E49F50-DA07-49B5-84F5-C21E63466732}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{58E49F50-DA07-49B5-84F5-C21E63466732}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D5FD1D10-544E-450C-882B-4FB560813DDA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D5FD1D10-544E-450C-882B-4FB560813DDA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D5FD1D10-544E-450C-882B-4FB560813DDA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D5FD1D10-544E-450C-882B-4FB560813DDA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
