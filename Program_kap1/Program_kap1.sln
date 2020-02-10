@@ -51,6 +51,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LabeledTextBox_3_12", "Labe
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SparaLasKontakt", "SparaLasKontakt\SparaLasKontakt.csproj", "{54EDEF07-33A4-4584-B0BB-390F53661599}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LasEnBok_4_1", "LasEnBok_4_1\LasEnBok_4_1.csproj", "{0DB3DAE5-1A5D-412F-BA75-E3FD5FB99D77}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -153,6 +155,10 @@ Global
 		{54EDEF07-33A4-4584-B0BB-390F53661599}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{54EDEF07-33A4-4584-B0BB-390F53661599}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{54EDEF07-33A4-4584-B0BB-390F53661599}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0DB3DAE5-1A5D-412F-BA75-E3FD5FB99D77}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0DB3DAE5-1A5D-412F-BA75-E3FD5FB99D77}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0DB3DAE5-1A5D-412F-BA75-E3FD5FB99D77}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0DB3DAE5-1A5D-412F-BA75-E3FD5FB99D77}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
