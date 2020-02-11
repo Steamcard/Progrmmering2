@@ -28,37 +28,47 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.tbxData = new System.Windows.Forms.TextBox();
+            this.tbxRad1 = new System.Windows.Forms.TextBox();
+            this.tbxRad2 = new System.Windows.Forms.TextBox();
             this.btnChange = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
-            this.cmsArkiv = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.mspArkiv = new System.Windows.Forms.ToolStripMenuItem();
+            this.nyttToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.öppnaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.sparaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.sparaSomToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
+            this.stängToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
+            this.dlgSaveFile = new System.Windows.Forms.SaveFileDialog();
+            this.dlgOpenFile = new System.Windows.Forms.OpenFileDialog();
+            this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
-            // textBox1
+            // tbxData
             // 
-            this.textBox1.Location = new System.Drawing.Point(2, 63);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.ReadOnly = true;
-            this.textBox1.Size = new System.Drawing.Size(644, 385);
-            this.textBox1.TabIndex = 0;
+            this.tbxData.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.tbxData.Location = new System.Drawing.Point(12, 63);
+            this.tbxData.Multiline = true;
+            this.tbxData.Name = "tbxData";
+            this.tbxData.Size = new System.Drawing.Size(644, 312);
+            this.tbxData.TabIndex = 0;
             // 
-            // textBox2
+            // tbxRad1
             // 
-            this.textBox2.Location = new System.Drawing.Point(273, 37);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(121, 20);
-            this.textBox2.TabIndex = 1;
+            this.tbxRad1.Location = new System.Drawing.Point(273, 37);
+            this.tbxRad1.Name = "tbxRad1";
+            this.tbxRad1.Size = new System.Drawing.Size(121, 20);
+            this.tbxRad1.TabIndex = 1;
             // 
-            // textBox3
+            // tbxRad2
             // 
-            this.textBox3.Location = new System.Drawing.Point(435, 37);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(121, 20);
-            this.textBox3.TabIndex = 2;
+            this.tbxRad2.Location = new System.Drawing.Point(435, 37);
+            this.tbxRad2.Name = "tbxRad2";
+            this.tbxRad2.Size = new System.Drawing.Size(121, 20);
+            this.tbxRad2.TabIndex = 2;
             // 
             // btnChange
             // 
@@ -78,11 +88,79 @@
             this.label1.TabIndex = 4;
             this.label1.Text = "--->";
             // 
-            // cmsArkiv
+            // menuStrip1
             // 
-            this.cmsArkiv.Name = "cmsArkiv";
-            this.cmsArkiv.Size = new System.Drawing.Size(61, 4);
-            this.cmsArkiv.Text = "Arkiv";
+            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.mspArkiv});
+            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
+            this.menuStrip1.Name = "menuStrip1";
+            this.menuStrip1.Size = new System.Drawing.Size(800, 24);
+            this.menuStrip1.TabIndex = 5;
+            this.menuStrip1.Text = "menuStrip1";
+            // 
+            // mspArkiv
+            // 
+            this.mspArkiv.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.nyttToolStripMenuItem,
+            this.toolStripSeparator1,
+            this.öppnaToolStripMenuItem,
+            this.sparaToolStripMenuItem,
+            this.sparaSomToolStripMenuItem,
+            this.toolStripSeparator2,
+            this.stängToolStripMenuItem});
+            this.mspArkiv.Name = "mspArkiv";
+            this.mspArkiv.Size = new System.Drawing.Size(46, 20);
+            this.mspArkiv.Text = "Arkiv";
+            this.mspArkiv.Click += new System.EventHandler(this.MspArkiv_Click);
+            // 
+            // nyttToolStripMenuItem
+            // 
+            this.nyttToolStripMenuItem.Name = "nyttToolStripMenuItem";
+            this.nyttToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.nyttToolStripMenuItem.Text = "Nytt";
+            this.nyttToolStripMenuItem.Click += new System.EventHandler(this.NyttToolStripMenuItem_Click);
+            // 
+            // öppnaToolStripMenuItem
+            // 
+            this.öppnaToolStripMenuItem.Name = "öppnaToolStripMenuItem";
+            this.öppnaToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.öppnaToolStripMenuItem.Text = "Öppna";
+            this.öppnaToolStripMenuItem.Click += new System.EventHandler(this.ÖppnaToolStripMenuItem_Click);
+            // 
+            // sparaToolStripMenuItem
+            // 
+            this.sparaToolStripMenuItem.Name = "sparaToolStripMenuItem";
+            this.sparaToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.sparaToolStripMenuItem.Text = "Spara";
+            this.sparaToolStripMenuItem.Click += new System.EventHandler(this.SparaToolStripMenuItem_Click);
+            // 
+            // sparaSomToolStripMenuItem
+            // 
+            this.sparaSomToolStripMenuItem.Name = "sparaSomToolStripMenuItem";
+            this.sparaSomToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.sparaSomToolStripMenuItem.Text = "Spara som...";
+            this.sparaSomToolStripMenuItem.Click += new System.EventHandler(this.SparaSomToolStripMenuItem_Click);
+            // 
+            // toolStripSeparator1
+            // 
+            this.toolStripSeparator1.Name = "toolStripSeparator1";
+            this.toolStripSeparator1.Size = new System.Drawing.Size(177, 6);
+            // 
+            // stängToolStripMenuItem
+            // 
+            this.stängToolStripMenuItem.Name = "stängToolStripMenuItem";
+            this.stängToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.stängToolStripMenuItem.Text = "Stäng";
+            this.stängToolStripMenuItem.Click += new System.EventHandler(this.StängToolStripMenuItem_Click);
+            // 
+            // toolStripSeparator2
+            // 
+            this.toolStripSeparator2.Name = "toolStripSeparator2";
+            this.toolStripSeparator2.Size = new System.Drawing.Size(177, 6);
+            // 
+            // dlgOpenFile
+            // 
+            this.dlgOpenFile.FileName = "dlgOpenFile";
             // 
             // Form1
             // 
@@ -91,11 +169,15 @@
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btnChange);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.tbxRad2);
+            this.Controls.Add(this.tbxRad1);
+            this.Controls.Add(this.tbxData);
+            this.Controls.Add(this.menuStrip1);
+            this.MainMenuStrip = this.menuStrip1;
             this.Name = "Form1";
             this.Text = "Form1";
+            this.menuStrip1.ResumeLayout(false);
+            this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -103,12 +185,22 @@
 
         #endregion
 
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox tbxData;
+        private System.Windows.Forms.TextBox tbxRad1;
+        private System.Windows.Forms.TextBox tbxRad2;
         private System.Windows.Forms.Button btnChange;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.ContextMenuStrip cmsArkiv;
+        private System.Windows.Forms.MenuStrip menuStrip1;
+        private System.Windows.Forms.ToolStripMenuItem mspArkiv;
+        private System.Windows.Forms.ToolStripMenuItem nyttToolStripMenuItem;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator1;
+        private System.Windows.Forms.ToolStripMenuItem öppnaToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem sparaToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem sparaSomToolStripMenuItem;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator2;
+        private System.Windows.Forms.ToolStripMenuItem stängToolStripMenuItem;
+        private System.Windows.Forms.SaveFileDialog dlgSaveFile;
+        private System.Windows.Forms.OpenFileDialog dlgOpenFile;
     }
 }
 
