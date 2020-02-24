@@ -53,6 +53,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SparaLasKontakt", "SparaLas
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LasEnBok_4_1", "LasEnBok_4_1\LasEnBok_4_1.csproj", "{0DB3DAE5-1A5D-412F-BA75-E3FD5FB99D77}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UDP", "WindowsFormsApp1\UDP.csproj", "{4ECE85AD-AB23-4499-9556-C0345749207F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -159,6 +161,10 @@ Global
 		{0DB3DAE5-1A5D-412F-BA75-E3FD5FB99D77}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0DB3DAE5-1A5D-412F-BA75-E3FD5FB99D77}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0DB3DAE5-1A5D-412F-BA75-E3FD5FB99D77}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4ECE85AD-AB23-4499-9556-C0345749207F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4ECE85AD-AB23-4499-9556-C0345749207F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4ECE85AD-AB23-4499-9556-C0345749207F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4ECE85AD-AB23-4499-9556-C0345749207F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
