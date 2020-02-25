@@ -21,10 +21,11 @@ namespace WindowsFormsApp1
 
         private void btnSend_Click(object sender, EventArgs e)
         {
+            int port = int.Parse(tbxPost.Text);
             byte[] message = Encoding.Unicode.GetBytes(tbxMeddelande.Text);
 
             IPAddress serverIP = IPAddress.Parse("127.0.0.1");
-            IPEndPoint destiantion = new IPEndPoint(serverIP, 12345);
+            IPEndPoint destiantion = new IPEndPoint(serverIP, port);
 
             UdpClient klient = new UdpClient();
             klient.Send(message, message.Length, destiantion);
